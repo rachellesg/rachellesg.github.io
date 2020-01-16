@@ -1,0 +1,42 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #c8d6c7;
+  /* background: #eeeeee; */
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #112e52;
+}
+
+h1 {
+  color: #253566;
+  margin: 0 0 50px 0;
+  /*font-family: 'Merriweather Sans', sans-serif;*/
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 768px;
+  margin: 30vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-about {
+  text-align: center;
+}
+
+.highlight {
+  /* background: #FFE8C2; */
+  display: inline-block;
+  transform: translateY(-2px);
+  background: rgb(255,255,255, 0.4);
+  font-weight: bold;
+}
+
+.alt-highlight {
+  display: inline-block;
+  transform: translateY(-2px);
+  background: rgb(37,53,102, 1);
+  color: #ffffff;
+}
