@@ -4,25 +4,61 @@ body {
   /* background: #eeeeee; */
   font-size: 20px;
   line-height: 1.5em;
-  color: #112e52;
+  color: #112e52;                                                                                                                                                                                          
 }
 
+a {
+  color: #253566;
+}
+
+a:hover {
+  background: #253566;
+  color: #ffffff;
+}
+
+section {
+  margin: 50px auto;
+}
+               
 h1 {
   color: #253566;
   margin: 0 0 50px 0;
   /*font-family: 'Merriweather Sans', sans-serif;*/
   font-size: 80px;
+  line-height: 85px;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin: 0 auto 40px auto;
+  background: #253566;
+  color: #ffffff;
+  transform:rotate(-2deg);
 }
 
 .container {
   max-width: 768px;
-  margin: 30vh auto;
+  margin: 10vh auto;
   justify-content: space-between;
+  text-align: center;
 }
 
 .main-about {
-  text-align: center;
+}
+
+.main-contact {
+  margin: 20px 0;
+}
+
+.main-contact a {
+  text-decoration: none;
+}
+
+.main-contact .fab {
+  font-size: 30px;
 }
 
 .highlight {
@@ -31,6 +67,7 @@ h1 {
   transform: translateY(-2px);
   background: rgb(255,255,255, 0.4);
   font-weight: bold;
+  line-height: 15px;
 }
 
 .alt-highlight {
@@ -38,4 +75,68 @@ h1 {
   transform: translateY(-2px);
   background: rgb(37,53,102, 1);
   color: #ffffff;
+  line-height: 15px;
+}
+
+.main-portfolio {
+  line-height: 1.2em;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  max-width: 45%;
+  margin: 0 20px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  display: block;
+  opacity: 0.7;
+  margin: 15px auto;
+}
+
+.project-description,
+.project-languages,
+.project-links a {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.project-languages .css {
+  background: #F6AA1C;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+.project-languages .html {
+  background: #AA7BC3;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+
+.project-languages .javascript {
+  background: #E2F9B8;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.project-languages .photoshop {
+  background: #0dacff;
+  display: inline-block;
+  transform: translateY(-1px);
 }
