@@ -143,3 +143,9 @@ h2 {
   display: inline-block;
   transform: translateY(-1px);
 }
+
+.project-languages .bootstrap {
+  background: #cd429a;
+  display: inline-block;
+  transform: translateY(0px);
+}
