@@ -84,6 +84,9 @@ h2 {
 .portfolio {
   display: flex;
   justify-content: space-between;
+  margin: 35px 0;
+  border-bottom: 1px dashed rgb(37,53,102, 1);
+  padding-bottom: 30px;
 }
 
 .project {
@@ -148,4 +151,10 @@ h2 {
   background: #cd429a;
   display: inline-block;
   transform: translateY(0px);
+}
+
+.project-languages .php {
+  background: #eeeeee;
+  display: inline-block;
+  transform: translateY(2px);
 }
