@@ -1,10 +1,10 @@
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   background: #c8d6c7;
   /* background: #eeeeee; */
   font-size: 20px;
   line-height: 1.5em;
-  color: #112e52;                                                                                                                                                                                          
+  color: #112e52;
 }
 
 a {
@@ -19,7 +19,7 @@ a:hover {
 section {
   margin: 50px auto;
 }
-               
+
 h1 {
   color: #253566;
   margin: 0 0 50px 0;
@@ -36,7 +36,7 @@ h2 {
   margin: 0 auto 40px auto;
   background: #253566;
   color: #ffffff;
-  transform:rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
 .container {
@@ -65,14 +65,14 @@ h2 {
 .highlight {
   /* background: #FFE8C2; */
   transform: translateY(-2px);
-  background: rgb(255,255,255, 0.4);
+  background: rgb(255, 255, 255, 0.4);
   font-weight: bold;
 }
 
 .alt-highlight {
   font-size: 20px;
   transform: translateY(-2px);
-  background: rgb(37,53,102, 1);
+  background: rgb(37, 53, 102, 1);
   color: #ffffff;
   line-height: 15px;
 }
@@ -85,13 +85,17 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 35px 0;
-  border-bottom: 1px dashed rgb(37,53,102, 1);
+  border-bottom: 1px dashed rgb(37, 53, 102, 1);
   padding-bottom: 30px;
+  align-items: center;
+  flex: 0 3 33%;
+  flex-wrap: wrap;
 }
 
 .project {
   max-width: 45%;
-  margin: 0 20px;
+  margin: 0 10px 50px 10px;
+  width: 30%;
 }
 
 .project-title {
@@ -124,19 +128,19 @@ h2 {
 }
 
 .project-languages .css {
-  background: #F6AA1C;
+  background: #f6aa1c;
   display: inline-block;
   transform: translateY(2px);
 }
 
 .project-languages .html {
-  background: #AA7BC3;
+  background: #aa7bc3;
   display: inline-block;
   transform: translateY(-2px);
 }
 
 .project-languages .javascript {
-  background: #E2F9B8;
+  background: #e2f9b8;
   display: inline-block;
   transform: translateY(-1px);
 }
