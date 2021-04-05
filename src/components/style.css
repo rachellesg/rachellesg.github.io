@@ -1,0 +1,413 @@
+.container {
+  width: 960px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 424px) {
+  .container {
+    width: 100%;
+    max-width: 414px;
+  }
+}
+
+/*** --- COMMON --- ***/
+
+h1,
+h2,
+h3,
+h4 {
+  /* font-family: "GT Walsheim Pro", Georgia, "Times New Roman", Times, serif; */
+  font-family: "Ogg", serif;
+}
+
+h2 {
+  color: #1f1f1f;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+h2::before {
+  background: #ecc58e;
+  content: attr(data-shadow);
+  position: absolute;
+  font-size: 2.5rem;
+  z-index: -1;
+  bottom: -50%;
+  right: -10%;
+  text-shadow: none;
+}
+
+h2::after {
+  position: absolute;
+  height: 50%;
+  width: 20vw;
+  bottom: -20%;
+  left: -0.5rem;
+  background-color: #ecc58e;
+  z-index: -1;
+  transform-origin: left center;
+  animation: 1s cubic-bezier(0.4, 0.2, 1) 0s 1 onrmal none running;
+  content: "";
+}
+
+main {
+  padding: 50px 0;
+}
+
+a {
+  color: #eba0bf;
+}
+
+.emphasis {
+  font-weight: 700;
+}
+
+p {
+  padding: 15px 0;
+}
+
+.secondary-image {
+  width: 50%;
+}
+
+/*** --- HEADER --- ***/
+
+header {
+  height: 150px;
+  /* color: #ffffff; */
+}
+
+.header-bg {
+  background: #f6e8e6;
+}
+
+header .left-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-weight: bold;
+  /* font-family: "Ogg", Georgia, "Times New Roman", Times, serif; */
+  font-size: 25px;
+}
+
+.social-media {
+  align-items: center;
+  padding: 15px 0;
+}
+
+.social-media ul li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+}
+
+.social-media ul li a {
+  color: #1f1f1f;
+}
+
+.social-media ul li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  bottom: 0;
+  left: 0;
+  background: pink;
+  border-radius: 9px;
+}
+
+.social-media ul {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-info {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.summary {
+  position: relative;
+  text-align: center;
+  margin: 5vh 6vw 15vh; /* background: #f0e4dc; */
+  padding: 30px;
+  font-size: 28px;
+  line-height: 38px;
+  min-height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .personal-info {
+    padding: 20px 0;
+  }
+
+  .summary {
+    padding: 0;
+    margin: 0vh 3vw 10vh;
+  }
+}
+
+.summary .hi {
+  font-family: "Ogg", Georgia, "Times New Roman", Times, serif;
+  font-size: 75px;
+  line-height: 80px;
+  animation: animated-text 3s steps(24, end) 1s 1 normal both,
+    animated-cursor 800ms steps(24, end) infinite;
+  border-right: solid 3px #eba0bf;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(239, 23, 94, 0.5);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*** --- SK I LL Z --- ***/
+
+.total-skills {
+  padding: 120px 0;
+}
+
+.skills {
+  /* width: 38%; */
+  padding: 20px 0;
+  /* background: rgb(187, 54, 50); */
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skills-tag {
+  padding: 5px 12px;
+  width: auto;
+  border-radius: 20px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.uiux {
+  background: #ecb96d;
+}
+
+.html {
+  background: #e06e66;
+}
+
+.css {
+  background: #91a0c7;
+}
+
+.javascript {
+  background: #73afa4;
+}
+
+.reactjs {
+  background: #e5bad0;
+}
+
+.photoshop {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.portfolio-link {
+  margin: 50px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+/*** --- JO B --- ***/
+
+.experience {
+  display: flex;
+  box-sizing: border-box;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.work {
+  width: 55%;
+  position: relative;
+  padding-left: 50px;
+}
+
+.qualifications {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    flex-direction: column-reverse;
+    padding-top: 100px;
+  }
+  .work,
+  .qualifications {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.work:before {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background: #1f1f1f;
+  width: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .work:before {
+    width: 0;
+    height: 0;
+  }
+}
+
+.key-strengths {
+  border-bottom: 1px solid #1f1f1f;
+  margin-bottom: 50px;
+  padding: 0 0 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .key-strengths,
+  .education {
+    width: 100%;
+  }
+  .work {
+    border-bottom: 1px solid #1f1f1f;
+    margin-bottom: 50px;
+    padding: 0 0 40px 0;
+  }
+}
+
+.job-experience {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.job-duration {
+  width: 20%;
+  margin-right: 15px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.job-description {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.job-title {
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+/*** --- PROJECKS --- ***/
+
+.projects {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.project-listing {
+  margin: 25px 0;
+  width: 48%;
+}
+
+.project-headings {
+  display: flex;
+}
+
+.numeric {
+  position: relative;
+  width: 160px;
+  margin-right: 25px;
+}
+
+.numeric:after {
+  width: 100px;
+  height: 1px;
+  background: #1f1f1f;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  content: "";
+}
+
+.project-image {
+  margin: 15px 0;
+}
+
+/*** --- F O O T ER --- ***/
+
+footer {
+  background: #1f1f1f;
+  color: #ffffff;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.footer-title {
+  font-family: "Ogg", serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 48px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
