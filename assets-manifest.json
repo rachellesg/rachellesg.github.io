@@ -1,9 +1,11 @@
 {
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
+  "static/RachelleYeo-CV_compressed.pdf": "static/RachelleYeo-CV_compressed-c3c66d5e3f3354fc9305e5e48b8bfdf7.pdf",
   "static/gif-search.png": "static/gif-search-d757d74c7a6efc4ea2521932823461ce.png",
   "static/linkdr.png": "static/linkdr-add86c07d5256f8675699473665e8659.png",
   "static/merquri.png": "static/merquri-703e0b1a6e4f717c6960db43f4b32024.png",
   "static/rapidrace.png": "static/rapidrace-dcd7f486085c2cd72a670931e076f91d.png",
-  "static/sephora.png": "static/sephora-be89fedf6fbb5ab49dd55515c97534db.png"
+  "static/sephora.png": "static/sephora-be89fedf6fbb5ab49dd55515c97534db.png",
+  "static/somnio.png": "static/somnio-bb5626e0cf1c57bbc0c83694e36b201b.png"
 }
